@@ -23,11 +23,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    to right,
-    rgba(255, 0, 0, 0.5),
-    rgba(255, 141, 141, 0.5)
-  );
+  background: repeating-linear-gradient(
+      12deg,
+      white,
+      rgba(160, 160, 160, 0.4) 40%
+    ),
+    repeating-linear-gradient(-12deg, white, rgba(218, 218, 218, 0.4) 60%);
 }
 
 .header {
@@ -52,7 +53,12 @@ header {
   position: absolute;
   top: 0;
   border-bottom: 2px solid black;
-  background: transparent;
+  background: repeating-linear-gradient(
+      45deg,
+      white,
+      rgba(187, 187, 187, 0.4) 50%
+    ),
+    repeating-linear-gradient(-45deg, white, rgba(255, 126, 126, 0.5) 20%);
 }
 
 .title {
@@ -84,7 +90,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
+  border: 4px solid black;
   border-radius: 10px;
   margin: 5px;
   font-size: 15vh;
@@ -108,7 +114,12 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: transparent;
+  background: repeating-linear-gradient(
+      45deg,
+      white,
+      rgba(187, 187, 187, 0.4) 50%
+    ),
+    repeating-linear-gradient(-45deg, white, rgba(0, 225, 255, 0.5) 20%);
 }
 
 .page-title {
@@ -138,7 +149,7 @@ header {
 
 .page-title h1:hover {
   color: black;
-  background-color: white;
+  background-color: transparent;
 }
 
 .page-body {
@@ -156,7 +167,12 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: transparent;
+  background: repeating-linear-gradient(
+      45deg,
+      white,
+      rgba(187, 187, 187, 0.4) 50%
+    ),
+    repeating-linear-gradient(-45deg, white, rgba(9, 255, 0, 0.5) 20%);
 }
 
 #third-page {
@@ -164,11 +180,32 @@ header {
   top: 300vh;
   height: 100vh;
   width: 100%;
-  border-bottom: 2px solid black;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: transparent;
+  background: repeating-linear-gradient(
+      45deg,
+      white,
+      rgba(187, 187, 187, 0.4) 50%
+    ),
+    repeating-linear-gradient(-45deg, white, rgba(255, 126, 126, 0.5) 20%);
+}
+
+footer {
+  position: absolute;
+  top: 400vh;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(42, 42, 42);
+  box-shadow: 0 -2px 5px red;
+}
+
+.footer h3 {
+  color: white;
+  text-shadow: 0 2px 1px black, 0px 0px 5px white;
 }
 
 @media screen and (max-width: 800px) {
