@@ -32,6 +32,7 @@ header {
 
 .header {
   display: flex;
+  align-items: center;
 }
 
 .header img {
@@ -57,7 +58,7 @@ header {
 .title {
   display: flex;
   justify-content: center;
-  margin: 15vh;
+  margin: 15vh 0;
   font-family: 'Fredoka One', cursive;
 }
 
@@ -168,4 +169,46 @@ header {
   align-items: center;
   flex-direction: column;
   background: transparent;
+}
+
+@media screen and (max-width: 800px) {
+  .title h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #home {
+    min-height: 100vh;
+  }
+
+  .title h1 {
+    font-size: 40px;
+  }
+  .box {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .box {
+    width: 90px;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .box {
+    width: 80px;
+  }
 }
