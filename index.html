@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roll the Dice</title>
+    <link rel="icon" type="image/png" href="./images/dinew.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img src="./images/dinew.png" alt="Logo" />
+        <h1>Roll The Dice!</h1>
+      </div>
+    </header>
+    <section id="home">
+      <div class="title">
+        <h1>Pick Amount of Dice</h1>
+      </div>
+      <div class="home-body">
+        <a href="#first-page"><div class="box">1</div></a>
+        <a href="#second-page"><div class="box">2</div></a>
+        <a href="#third-page"><div class="box">3</div></a>
+      </div>
+    </section>
+    <section id="first-page">
+      <div class="title page-title">
+        <h1 onclick="roll()">ROLL!</h1>
+        <a href="#home">Back to Top</a>
+      </div>
+      <div class="page-body">
+        <div class="box" id="first-page-di">0</div>
+      </div>
+    </section>
+    <section id="second-page">
+      <div class="title page-title">
+        <h1 onclick="rollTwo()">ROLL!</h1>
+        <a href="#home">Back to Top</a>
+      </div>
+      <div class="page-body">
+        <div class="box" id="second-di">0</div>
+        <div class="box" id="third-di">0</div>
+      </div>
+    </section>
+    <section id="third-page">
+      <div class="title page-title">
+        <h1 onclick="rollThree()">ROLL!</h1>
+        <a href="#home">Back to Top</a>
+      </div>
+      <div class="page-body">
+        <div class="box" id="fourth-di">0</div>
+        <div class="box" id="fith-di">0</div>
+        <div class="box" id="sixth-di">0</div>
+      </div>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
