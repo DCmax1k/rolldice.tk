@@ -193,7 +193,7 @@ header {
 
 @media screen and (max-width: 400px) {
   .header h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
@@ -210,5 +210,9 @@ header {
 @media screen and (max-width: 310px) {
   .box {
     width: 80px;
+  }
+
+  .header h1 {
+    font-size: 120%;
   }
 }
